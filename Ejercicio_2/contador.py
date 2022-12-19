@@ -8,8 +8,8 @@ if len(contenido)==0:
     contenido='0' #si el fichero esta vacio, le asignamos el valor 0
     fichero.write(contenido) #escribimos el contenido en el fichero
 fichero.close() #cerramos el fichero
-
 try:
+
     contador= int(contenido) #convertimos el contenido a entero
     if len(sys.argv)==2: 
         if sys.argv[1]=='inc':
