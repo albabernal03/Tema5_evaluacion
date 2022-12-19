@@ -12,4 +12,6 @@ class Personaje:
 
     def __str__(self):
         return '{} => Vida: {} Ataque: {} Defensa: {} Alcance: {}'.format(self.nombre, self.vida, self.ataque, self.defensa, self.alcance)
-        
+
+class Gestor:
+    
