@@ -61,4 +61,23 @@ def division(a, b):
     except ZeroDivisionError:
         print("Error: No se puede dividir entre cero")
 ```
+***
 
+## Ejercicio 2:<a name="id2"></a>
+
+En este ejercicio nos piden crear un script llamado contador.py que realice varias tareas sobre un fichero llamado contador.txt que almacenará un contador de visitas.
+
+- Si el fichero no existe o está vacío lo crearemos con el número 0
+-    Luego a partir de un argumento:
+
+·        Si se envía el argumento inc, se incrementará el contador en uno y se mostrará por pantalla.
+
+·        Si se envía el argumento dec, se decrementará el contador en uno y se mostrará por pantalla.
+
+·        Si no se envía ningún argumento (o algo que no sea inc o dec), se mostrará el valor del contador por pantalla.
+
+·        Finalmente guardará de nuevo el valor del contador de nuevo en el fichero.
+
+·        Utiliza excepciones si crees que es necesario, puedes mostrar el mensaje: Error: Fichero corrupto.
+
+**Código:**
