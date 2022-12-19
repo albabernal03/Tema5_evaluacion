@@ -81,3 +81,5 @@ En este ejercicio nos piden crear un script llamado contador.py que realice vari
 ·        Utiliza excepciones si crees que es necesario, puedes mostrar el mensaje: Error: Fichero corrupto.
 
 **Código:**
+```
+```
