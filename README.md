@@ -109,3 +109,15 @@ def main():
     except ValueError:
         print('Error: Fichero corrupto')
 ```
+***
+
+
+## Ejercicio 3:<a name="id3"></a>
+
+En este ejercicio tendremos que hacer uso del módulo pickle. Debemos crear dos clases, la primera Personajes(donde crearemos los personajes) y otra llamada Gestor (encargada de guardarlos, eliminarlos y mostrarlos).
+
+**Código:**
+
+```
+```
+
