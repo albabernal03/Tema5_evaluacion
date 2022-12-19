@@ -26,6 +26,17 @@ class Gestor:
         self.personajes.append(p)
         self.guardar() # guardamos los personajes en el fichero
 
+    def borrar(self, nombre):
+        for pTemp in self.personajes: 
+            if pTemp.nombre == nombre:
+                self.personajes.remove(pTemp)
+                self.guardar()
+                print('\nPersonaje {} borrado correctamente'.format(nombre))
+                return
+        print('\nNo existe el personaje {}'.format(nombre))
+
+    
+
     
 
 
