@@ -14,4 +14,20 @@ class Personaje:
         return '{} => Vida: {} Ataque: {} Defensa: {} Alcance: {}'.format(self.nombre, self.vida, self.ataque, self.defensa, self.alcance)
 
 class Gestor:
+    personajes= []
+
+    def __init__(self):
+        self.cargar() # cargamos los personajes del fichero
+
+    def agregar(self, p): # agregamos un personaje
+        for pTemp in self.personajes:  # comprobamos que no exista un personaje con el mismo nombre
+            if pTemp.nombre == p.nombre:
+                return 
+        self.personajes.append(p)
+        self.guardar() # guardamos los personajes en el fichero
+
     
+
+
+
+
