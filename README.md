@@ -8,7 +8,11 @@ Este es el link del [repositorio](https://github.com/albabernal03/Tema5_evaluaci
 <h2>¿De qué trata esta tarea?</h2>
 En esta tarea se nos pide realizar 4 ejercicios distintos:
 
-[1]. El ejercicio 1 nos pide crear un módulo llamado operaciones.py; donde encontamos 4 funciones (sumar,restar,producto y división). Si estas fallan mostrar un error por pantalla.
+
+[1].
+---
+
+El ejercicio 1 nos pide crear un módulo llamado operaciones.py; donde encontamos 4 funciones (sumar,restar,producto y división). Si estas fallan mostrar un error por pantalla.
 
 ***
 ## Indice
