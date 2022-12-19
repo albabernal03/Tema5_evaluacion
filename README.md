@@ -182,3 +182,14 @@ class Gestor:
 ```
 ***
 
+
+## Ejercicio 4:<a name="id4"></a>
+
+En este ejercicio se nos pide crear un reloj que muestre la hora minutos y segundos actuales.
+
+**Código:**
+
+```
+```
+
+
