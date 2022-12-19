@@ -9,5 +9,4 @@ def main():
         print('{}:{}:{}'.format(dt.hour,dt.minute,dt.second)) # Imprimimos la hora
         time.sleep(1) # Esperamos 1 segundo
 
-if __name__ == '__main__':
-    main()
+
