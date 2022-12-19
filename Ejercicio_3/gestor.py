@@ -35,6 +35,13 @@ class Gestor:
                 return
         print('\nNo existe el personaje {}'.format(nombre))
 
+    def mostrar(self):
+        if len(self.personajes) == 0:
+            print('\nNo hay personajes, el fichero esta vacio')
+            return
+        for p in self.personajes:
+            print(p)
+
     
 
     
