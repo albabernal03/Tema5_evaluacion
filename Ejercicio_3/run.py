@@ -6,4 +6,6 @@ if __name__ == '__main__':
     G.agregar(Personaje('Arquero',2,4,1,8))
     G.agregar(Personaje('Guerrero',2,4,2,4))
     G.mostrar()
-    
+    G.borrar('Arquero')
+    G.mostrar()
+
