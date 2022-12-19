@@ -20,16 +20,16 @@ class Gestor:
         self.cargar() # cargamos los personajes del fichero
 
     def agregar(self, p): # agregamos un personaje
-        for pTemp in self.personajes:  # comprobamos que no exista un personaje con el mismo nombre
-            if pTemp.nombre == p.nombre:
+        for personaje in self.personajes:  # comprobamos que no exista un personaje con el mismo nombre
+            if personaje.nombre == p.nombre:
                 return 
         self.personajes.append(p)
         self.guardar() # guardamos los personajes en el fichero
 
     def borrar(self, nombre):
-        for pTemp in self.personajes: 
-            if pTemp.nombre == nombre:
-                self.personajes.remove(pTemp)
+        for personaje in self.personajes: 
+            if personaje.nombre == nombre:
+                self.personajes.remove(personaje)
                 self.guardar()
                 print('\nPersonaje {} borrado correctamente'.format(nombre))
                 return
@@ -41,6 +41,20 @@ class Gestor:
             return
         for p in self.personajes:
             print(p)
+
+    def cargar(self):
+        fichero = open('personajes.pckl', 'ab+') # ab+ es para añadir y leer y lo de pickle es para que sepa que es un fichero pickle que se trata de un fichero binario, es decir que no se puede leer con un editor de texto
+        fichero.seek(0) # nos posicionamos al principio del fichero
+        try:
+            self.personajes = pickle.load(fichero) # cargamos los personajes del fichero 
+        except:
+            print('El fichero esta vacio')
+            pass
+        finally:
+            fichero.close()
+            print('Se han cargado {} personajes del fichero'.format(len(self.personajes)))
+
+            
 
     
 
