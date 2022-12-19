@@ -7,6 +7,7 @@ Este es el link del [repositorio](https://github.com/albabernal03/Tema5_evaluaci
 ***
 <h2>¿De qué trata esta tarea?</h2>
 En esta tarea se nos pide realizar 4 ejercicios distintos.
+
 ***
 ## Indice
 
@@ -24,5 +25,40 @@ En este ejercicio se nos pide crear un módulo llamado operaciones.py; donde enc
 **Código:**
 ```
 
+def suma(a, b):
+    try:
+        a = int(a) or float(a)
+        b = int(b) or float(b)
+        return a + b
+    except ValueError: 
+        print("Error: Solo se permiten numeros")
+
+
+def resta(a, b):
+    try:
+        a = int(a) or float(a)
+        b = int(b) or float(b)
+        return a - b
+    except ValueError:
+        print("Error: Solo se permiten numeros")
+
+def producto(a, b):
+    try:
+        a = int(a) or float(a)
+        b = int(b) or float(b)
+        return a * b
+    except ValueError:
+        print("Error: Solo se permiten numeros")
+
+
+def division(a, b):
+    try:
+        a = int(a) or float(a)
+        b = int(b) or float(b) and b != 0
+        return a / b
+    except ValueError:
+        print("Error: Solo se permiten numeros")
+    except ZeroDivisionError:
+        print("Error: No se puede dividir entre cero")
 ```
 
