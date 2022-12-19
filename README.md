@@ -11,7 +11,10 @@ En esta tarea se nos pide realizar 4 ejercicios distintos:
 
 Ejercicio 1:
 ---
-El ejercicio 1 nos pide crear un módulo llamado operaciones.py; donde encontamos 4 funciones (sumar,restar,producto y división). Si estas fallan mostrar un error por pantalla.
+Este nos pide crear un módulo llamado operaciones.py; donde encontamos 4 funciones (sumar,restar,producto y división). Si estas fallan mostrar un error por pantalla.
+
+Ejercicio 2:
+---
 
 ***
 ## Indice
